@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class Task02Controller {
 
-    @GetMapping("/task02")
+    @GetMapping(value = "/task02", produces = MediaType.APPLICATION_JSON_VALUE)
     public Animal task02(){
         return new Animal("lion", 12);
     }
