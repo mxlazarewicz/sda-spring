@@ -16,4 +16,9 @@ public class Task02Controller {
     public Animal task021(){
         return new Animal("monkey", 1);
     }
+
+    @GetMapping(value = "/task02.3")
+    public Animal task023(){
+        return new Animal("monkey", 5);
+    }
 }
