@@ -8,13 +8,16 @@ import org.springframework.web.bind.annotation.RestController;
 public class Task05Controller {
 
     private final ApplicationContext context;
+    private final NotManagedBySpring notManagedBySpring;
 
-    public Task05Controller(ApplicationContext context) {
+    public Task05Controller(ApplicationContext context, NotManagedBySpring notManagedBySpring) {
         this.context = context;
+        this.notManagedBySpring = notManagedBySpring;
     }
 
     @GetMapping("task05")
     public String task05(){
-        return "";
+        NotManagedBySpring notManagedBySpring = context.getBean(NotManagedBySpring.class);
+        return notManagedBySpring.toString();
     }
 }
