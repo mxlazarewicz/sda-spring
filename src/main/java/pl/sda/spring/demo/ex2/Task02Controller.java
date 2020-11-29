@@ -3,6 +3,7 @@ package pl.sda.spring.demo.ex2;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
+import pl.sda.spring.demo.util.Animal;
 
 @RestController
 public class Task02Controller {

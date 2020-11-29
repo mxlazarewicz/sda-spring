@@ -1,4 +1,4 @@
-package pl.sda.spring.demo.ex2;
+package pl.sda.spring.demo.util;
 
 public class Animal {
     private final String name;
